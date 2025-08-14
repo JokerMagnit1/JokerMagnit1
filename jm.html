@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JokerMagnit1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 40px;
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px red; }
+      50% { text-shadow: -2px -2px blue; }
+      100% { text-shadow: 2px -2px green; }
+    }
+    .section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .clicker {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>JokerMagnit1</h1>
+
+  <div class="section">
+    <h2>🧑‍💻 Обо мне</h2>
+    <p><strong>Имя:</strong> JokerMagnit1</p>
+    <p><strong>Город:</strong> Чирчик, Ташкентская область</p>
+    <p><strong>Возраст:</strong> [16]</p>
+    <p><strong>Языки:</strong> Русский, Английский, Узбекский</p>
+  </div>
+
+  <div class="section">
+    <h2>🔗 Связь</h2>
+    <ul>
+      <li><a href="https://t.me/твоя_ссылка" target="_blank" rel="noopener">Telegram</a><li>
+      <li><a href="https://github.com/твоя_ссылка" target="_blank" rel="noopener">GitHub</a><li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💸 Поддержать меня</h2>
+    <ul>
+      <li><a href="https://www.donationalerts.com/r/твоя_ссылка" target="_blank" rel="noopener">Donation Alerts</a></li>
+      <li><a href="https://tonkeeper.com/твоя_ссылка" target="_blank" rel="noopener">Tonkeeper</a></li>
+      <li>Другие способы: крипта, карта и т.д.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🛠️ Что я использую</h2>
+    <ul>
+      <li>Клиенты: Exteragram, Telegram Userbot</li>
+      <li>ОС: Arch Linux, Windows</li>
+      <li>Языки: Python, JavaScript, HTML/CSS</li>
+      <li>Инструменты: Canva, CapCut, Unreal Engine</li>
+    </ul>
+  </div>
+
+  <div class="section clicker">
+    <h2>🎮 Clicker-зона</h2>
+    <p>Кликай и расслабляйся 😎</p>
+    <button onclick="clickCount()">Кликни меня</button>
+    <p id="counter">Кликов: 0</p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Твой браузер не поддерживает аудио.
+  </audio>
+
+  <script>
+    let count = 0;
+    function clickCount() {
+      count++;
+      document.getElementById("counter").innerText = "Кликов: " + count;
+    }
+  </script>
+
+</body>
+</html>

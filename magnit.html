@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JokerMagnit1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(135deg, #000, #111);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .glitch {
+      position: relative;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+      text-transform: uppercase;
+      animation: glitch 1s infinite;
+    }
+
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      color: #fff;
+      background: transparent;
+    }
+
+    .glitch::before {
+      animation: glitchTop 1s infinite;
+      top: -2px;
+      color: #f0f;
+    }
+
+    .glitch::after {
+      animation: glitchBottom 1s infinite;
+      top: 2px;
+      color: #0ff;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    @keyframes glitchTop {
+      0% { clip-path: inset(0 0 90% 0); }
+      50% { clip-path: inset(10% 0 80% 0); }
+      100% { clip-path: inset(0 0 90% 0); }
+    }
+
+    @keyframes glitchBottom {
+      0% { clip-path: inset(90% 0 0 0); }
+      50% { clip-path: inset(80% 0 10% 0); }
+      100% { clip-path: inset(90% 0 0 0); }
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      animation: glitchFade 2s ease-in-out infinite;
+    }
+
+    @keyframes glitchFade {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.9; transform: scale(1.01); }
+    }
+
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+      color: #0ff;
+      text-shadow: 1px 1px #f0f;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ff00ff;
+    }
+
+    .clicker {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #333;
+      color: #fff;
+      border: 2px solid #0ff;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: glitch 1s infinite;
+    }
+
+    button:hover {
+      background-color: #f0f;
+      color: #000;
+    }
+
+    code {
+      background-color: #222;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="glitch" data-text="JokerMagnit1">JokerMagnit1</h1>
+
+  <div class="section">
+    <h2>╭────── Info</h2>
+    <ul>
+      <li>🍰 Age: 16</li>
+      <li>📍 Live in: Uzbekistan, Tashkent</li>
+      <li>🏘 From: Chirchik</li>
+      <li>🌐 Languages: RU, EN, UZ</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>╭────── Socials</h2>
+    <ul>
+      <li>✈️ Telegram: <a href="https://t.me/JokerMagnit1" target="_blank" rel="noopener noreferrer">@JokerMagnit1</a></li>
+      <li>💭 Signal: <a href="https://signal.me/#eu/ZrqsvYkkvo2WUuU3ev9P1z5ZMO3gCXHg8OSJY4VI2CneUEOBOstImoAYC-n5AiCH" target="_blank" rel="noopener noreferrer">@JokerMagnit1.01</a></li>
+      <li>🥰 Discord: <a href="https://discord.com/users/1380944421474009222" target="_blank" rel="noopener noreferrer">@JokerMagnit1</a></li>
+      <li>👌 GitHub: <a href="https://github.com/JokerMagnit1" target="_blank"rel="noopener noreferrer">@JokerMagnit1</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>╭────── Donate & Support</h2>
+    <ul>
+      <li>PayPal: [добавь ссылку]</li>
+      <li>Donation Alerts: <a href="https://www.donationalerts.com/r/jokermagnit1" target="_blank" rel="noopener noreferrer">Donate</a></li>
+      <li>TonKeeper: <code>UQCU38DH2MO_dEQ5IQmhLlnSueifdcd8SmTYiiVtKzNIh61a</code></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>╭────── Other</h2>
+    <ul>
+      <li>🤖 Userbot: <a href="https://t.me/legacy_help" target="_blank" rel="noopener noreferrer">Legacy</a></li>
+      <li>✈️ Client: <a href="https://exteragram.app/" target="_blank"rel="noopener noreferrer">Exteragram</a></li>
+      <li>💻 OS: <a href="https://archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Linux</a></li>
+    </ul>
+  </div>
+
+  <div class="section clicker">
+    <h2>🎮 Clicker-зона</h2>
+    <p>Кликай и расслабляйся 😎</p>
+    <button onclick="clickCount()">Кликни меня</button>
+    <p id="counter">Кликов: 0</p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Твой браузер не поддерживает аудио.
+  </audio>
+
+  <script>
+    let count = 0;
+    function clickCount() {
+      count++;
+      document.getElementById("counter").innerText = "Кликов: " + count;
+    }
+  </script>
+
+</body>
+</html>

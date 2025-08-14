@@ -8,6 +8,7 @@
 ## 🚀 Сайт в действии
 
 🔗 [Открыть сайт на GitHub Pages](https://jokermagnit1.github.io/JokerMagnit1/jokermagnit1.html)
+
 (https://jokermagnit1.github.io/JokerMagnit1/jm.html)
 (https://jokermagnit1.github.io/JokerMagnit1/joker.html)
 
@@ -40,3 +41,4 @@
 
 > 💡 Этот проект — часть творческого пути по созданию уникальных цифровых пространств.  
 > Если тебе нравится — поддержи или напиши!
+
